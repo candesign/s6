@@ -81,7 +81,6 @@ interact('#s6-charger').dropzone({
     $("#s6-hand-subtext").addClass('s6-hide');
     $("#s6-charger").addClass('s6-charger-move');
     $('#s6-fill').hide();
-    $("#s6-raty").hide();
   },
   ondragenter: function (event) {
     var draggableElement = event.relatedTarget,
@@ -122,6 +121,7 @@ interact('#s6-charger').dropzone({
     setTimeout(function() {
        $("#s6-button").addClass('bounceIn');
        $("#s6-nextisnow").removeClass('s6-hide');
+       $("#s6-raty").removeClass('s6-hide');
    }, 1200);
 
   },
